@@ -2,4 +2,41 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  'HiPhish/rainbow-delimiters.nvim',
+  --'telescope-undo.nvim',
+}
+
+-- From mini.basic or something
+--     o.ruler         = false   -- Don't show cursor position in command line
+--     o.fillchars     = 'eob: ' -- Don't show `~` outside of buffer
+--     o.smartindent = true -- Make indenting smart
+--     o.infercase   = true -- Infer letter cases for a richer built-in keyword completion
+--     o.virtualedit   = 'block'                     -- Allow going past the end of line in visual block mode
+--     o.splitkeep = 'screen'      -- Reduce scroll during window split
+--     opt.shortmess:append('WcC') -- Reduce command line messages
+--     o.termguicolors = true -- Enable gui colors
+--     o.pumblend  = 10 -- Make builtin completion menus slightly transparent
+--     o.pumheight = 10 -- Make popup menu smaller
+--     o.winblend  = 10 -- Make floating windows slightly transparent
+--     o.listchars = 'tab:> ,extends:…,precedes:…,nbsp:␣' -- Define which helper symbols to show
+--     o.list      = true                                 -- Show some helper symbols
+--     local border_chars = {
+--       bold   = 'vert:┃,horiz:━,horizdown:┳,horizup:┻,verthoriz:╋,vertleft:┫,vertright:┣',
+--       dot    = 'vert:·,horiz:·,horizdown:·,horizup:·,verthoriz:·,vertleft:·,vertright:·',
+--       double = 'vert:║,horiz:═,horizdown:╦,horizup:╩,verthoriz:╬,vertleft:╣,vertright:╠',
+--       single = 'vert:│,horiz:─,horizdown:┬,horizup:┴,verthoriz:┼,vertleft:┤,vertright:├',
+--       solid  = 'vert: ,horiz: ,horizdown: ,horizup: ,verthoriz: ,vertleft: ,vertright: ',
+--     }
+--     vim.opt.fillchars:append(border_chars)
+--         -- Search inside visually highlighted text. Use `silent = false` for it to
+--         -- make effect immediately.
+--         map('x', 'g/', '<esc>/\\%V', { silent = false, desc = 'Search inside visual selection' })
+--         -- Reselect latest changed, put, or yanked text
+--         map('n', 'gV', '"`[" . strpart(getregtype(), 0, 1) . "`]"', { expr = true, replace_keycodes = false, desc = 'Visually select changed text' })
+--
+--     -- Window resize (respecting `v:count`)
+--     map('n', '<C-Left>',  '"<Cmd>vertical resize -" . v:count1 . "<CR>"', { expr = true, replace_keycodes = false, desc = 'Decrease window width' })
+--     map('n', '<C-Down>',  '"<Cmd>resize -"          . v:count1 . "<CR>"', { expr = true, replace_keycodes = false, desc = 'Decrease window height' })
+--     map('n', '<C-Up>',    '"<Cmd>resize +"          . v:count1 . "<CR>"', { expr = true, replace_keycodes = false, desc = 'Increase window height' })
+--     map('n', '<C-Right>', '"<Cmd>vertical resize +" . v:count1 . "<CR>"', { expr = true, replace_keycodes = false, desc = 'Increase window width' })
